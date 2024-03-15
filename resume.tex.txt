@@ -1,0 +1,260 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor} % Changed package to xcolor for color definitions
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+%\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+% Define colors
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+% Assign colors to variables
+\colorlet{heading}{SlateGrey}
+\colorlet{accent}{SlateGrey}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large\bfseries\color{heading}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{\large#1} & \textbf{\small #2} \\
+		\textit{\large#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{\vspace{-5pt}\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	%----------HEADING----------
+	\begin{center}
+		{\Huge \scshape BIJAY KUMAR SHAH} \\ \vspace{1pt}
+		MOTIHARI, BIHAR \\ \vspace{1pt}
+		\small \raisebox{-0.1\height}{\faPhone\ \underline{+91-9153541517}} ~ 
+		\href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}{\faEnvelope\  \underline{bjsah3277@gmail.com}}} ~ 
+		\href{https://www.linkedin.com/in/bijay-shah-031871250/}{\raisebox{-0.2\height}{\faLinkedin\  \underline{Linked-in}}}  ~
+		\href{https://github.com/Bjshah07}{\raisebox{-0.2\height}{\faGithub\  \underline{GitHub}}} ~
+		\href{https://leetcode.com/BJshah07/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+		\vspace{-8pt}
+	\end{center}
+	
+	%-----------EDUCATION-----------
+	\section{SUMMARY}
+	\begin{center}
+		Versatile B.Tech graduate with hands-on experience in HTML, CSS, and JavaScript, complemented by strong MS Office skills. Seeking internship opportunities to apply technical expertise and gain practical experience in a dynamic environment."
+	\end{center}
+	\section{EDUCATION}
+	
+	\begin{multicols}{2}
+		
+		\begin{tabular}{|p{11.2cm}|p{3.7cm}|p{1.5cm}|p{3.11cm}|}
+			\hline
+			\centering{\textbf{Institutions Name}} & \centering{\textbf{Course}} & \centering{\textbf{CGPA}} & \textbf{Year} \\
+			\hline
+			\centering{Bhai Gurdas Institution of Engineering and Technology (BGIET)} \newline Sangrur, Punjab, India & \centering{B.Tech in C.S.E.} & \centering{8.29/10} &  2022 - currently \\
+			\hline
+			\centering{Tri-Padma Vidyashram Higher Secondary School} \newline Pulchowk, Lalitpur, Nepal & \centering{12th Grade - Science} & \centering{3.57/4} & 2019/20 - 2021/22 \\
+			\hline
+			\centering{Tri-Padma Vidyashram Secondary School} \newline Pulchowk, Lalitpur, Nepal & \centering{10th Grade} & \centering{3.90/4} & 2007 - 2019/20 \\
+			\hline
+		\end{tabular}
+		
+	\end{multicols}
+	
+	
+	
+	
+	%------RELEVANT COURSEWORK-------
+	
+	\section{TECHNICAL SKILLS}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		
+		\item{\textbf{LANGUAGES:} 
+			\begin{multicols}{3}
+				\begin{itemize}[itemsep=-2pt, parsep=5pt]
+					\item HTML
+					\item CSS
+					\item Javacript
+					\item C
+					\item C++
+				%	\item Java
+				%	\item SQL
+				\end{itemize}
+			\end{multicols}
+			\vspace*{2.0\multicolsep}
+			
+			
+		%	\item{\textbf{FRAMEWORK/LIBRARIES:}}
+		%	\begin{multicols}{3}
+		%		\begin{itemize}[itemsep=-2pt, parsep=5pt]
+		%			\item React.js
+		%			\item Angular
+		%			\item Django
+		%			\item jQuery
+		%			\item Bootstrap
+		%	\end{multicols}
+		%	\vspace*{2.0\multicolsep}
+			
+			
+			\item{\textbf{TOOLS:}}
+			\begin{multicols}{3}
+				\begin{itemize}[itemsep=-2pt, parsep=5pt]
+					\item VS code
+					\item Git
+					\item GitHub
+					\item GitLab
+					\item ChatGPT
+					
+				\end{itemize}
+			\end{multicols}
+			\vspace*{2.0\multicolsep}
+			
+			\item{\textbf{SKILLS:}}
+			\begin{multicols}{3}
+				\begin{itemize}[itemsep=-2pt, parsep=5pt]
+					\item MS-Excel
+					\item MS-Word
+					\item MS-Power Point
+					\item LaTex
+					\item OverLeaf
+				\end{itemize}
+			\end{multicols}
+			\vspace*{2.0\multicolsep}
+		}
+	\end{itemize}
+	
+	%-----------PROJECTS-----------
+	%\section{PROJECTS}
+	%  \resumeSubHeadingListStart
+	%    \resumeProjectHeading
+	%      {\textbf{\underline{Project Name}} $|$ Technology Stack Used}{MM YYYY}
+	%      \resumeItemListStart
+	%       \resumeItem{Description of the project and key contributions.}
+	%        \resumeItem{\href{Live Project Link}{Live project link} | \href{Project Link}%{GitHub link}}
+	%      \resumeItemListEnd
+	%  \resumeSubHeadingListEnd
+	
+	%-----------INTERNSHIP-----------
+	%\section{INTERNSHIP}
+	%  \resumeSubHeadingListStart
+	%   \resumeSubheading
+	%      {Company Name}{MM YYYY -- MM YYYY}
+	%      {Web Development Intern}{City, Country}
+	%     \resumeItemListStart
+	%       \resumeItem{Description of responsibilities and tasks undertaken during the internship.}
+	%     \resumeItemListEnd
+	%\resumeSubHeadingListEnd
+	
+	%-----------TECHNICAL SKILLS-----------
+	%\section{TECHNICAL SKILLS}
+	% \begin{itemize}[leftmargin=0.15in, label={}]
+		%   \small{\item{
+				%     \textbf{Languages}{: Python, Java, JavaScript, SQL, HTML/CSS} \\
+				%     \textbf{Frameworks/Libraries}{: ReactJS, NodeJS, ExpressJS} \\
+				%     \textbf{Tools}{: VS Code, Git, GitHub} \\
+				%   }}
+		% \end{itemize}
+	
+	%-----------EXTRACURRICULAR-----------
+	\section{EXTRACURRICULAR ACTIVITIES}
+	
+	\subsection*{LANGUAGES}
+	
+	
+	\begin{itemize}
+		\item Proficient in multiple languages, including:
+		\begin{multicols}{4}
+			
+			
+			\begin{itemize}
+				\item Hindi
+				\item Nepali
+				\item Bhojpuri
+				\item English
+			\end{itemize}
+		\end{multicols}
+		\item Multilingualism enhances cross-cultural communication and understanding, facilitating effective communication in diverse environments.
+	\end{itemize}
+	
+	\subsection*{SPORTS}
+	\begin{itemize}
+		\item Skilled in both indoor and outdoor games, including:
+		\begin{multicols}{4}
+			\begin{itemize}
+				\item Cricket
+				\item Football
+				\item Sudoku
+				\item Carrom
+			\end{itemize}
+		\end{multicols}
+		\item Participated in sports activities to foster physical fitness, discipline, teamwork, problem solving skills and sportsmanship.
+	\end{itemize}
+	
+	
+	\subsection*{Analytical Skills and Financial Awareness}
+	\begin{itemize}
+		\item Proficient in analytical thinking, financial markets, and fundamental analysis. 
+		\item Experienced in monitoring market trends and participating in virtual stock trading competitions.
+	\end{itemize}
+
+	
+	%-----------CERTIFICATIONS-----------
+	\section{CERTIFICATIONS}
+	\begin{itemize}
+		\item \href{https://drive.google.com/file/d/1tk7NjSfHQI_Y97njPEOLmbCsYsnP-tL5/view?usp=drive_link}{JEE Mains Result \faExternalLink}
+		\item \href{https://drive.google.com/file/d/102y3ygDVR3hGDoxAOhlxQY2HAnKz67iT/view?usp=drive_link}{Microsoft Excel Beginner to advance -My Live Support \faExternalLink}
+		\item \href{https://drive.google.com/file/d/1mYfAF20MsH_vbT5MpH1jo9jXRjzuk566/view?usp=drive_link}{Microsoft Word Beginner to Advance -My Live Support \faExternalLink}
+	\end{itemize}
+	
+\end{document}
